@@ -5,13 +5,7 @@ function trocarimg(filename, animalname){
 }
 function pegarAnimal(){
     let animal=document.querySelector('.img').getAttribute('data-animal');
-    Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'O animal é um GATO' + animal,
-        showConfirmButton: false,
-        timer: 1500
-      } + animal)
-    //swal(" O animal é um GATO", "error");
+    //Swal("O animal é um GATO", 'success' + animal );
+   swal(" O animal é um " + animal /*+ ' success' */);
     //alert('O animal é: '+animal);
 }
